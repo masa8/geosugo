@@ -5,12 +5,15 @@ geosugo
 
 LICENSE
 =======
-
-#GeoHex4j License
- geosugo uses geohex4j whose specification is developed by @sa2da and licensed under CC-BY-SA.
- geohex4j is
-
-#GeoSugo License
+ geohex4j
+ --------
+ GeoSugo uses geohex4j which is:
+ geohex4j license is licensed unser LICENSE_geohex4j.md 
+ geohex4j's specification is created by @sa2da and licensed under CC-BY-SA.
+ geohex4j is followed original JavaScript code license (CC-BY-SA) developed by @sa2da.
+ 
+ GeoSugo
+ -------
  Copyright (c) 2014 Masaya SHIMOMATSU
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
