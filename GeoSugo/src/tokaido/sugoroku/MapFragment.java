@@ -88,10 +88,7 @@ public class MapFragment extends SherlockMapFragment implements  android.locatio
 
 	@Override
 	public void onLocationChanged(Location location) {
-	    Toast.makeText(getActivity(), Double.valueOf(location.getLatitude()).toString()
-	    		+ ":" + Double.valueOf(location.getLongitude()).toString(),
-	    		Toast.LENGTH_SHORT).show();
-        LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
+	    LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
         sm.moved(latLng);
         sm.updateView();
         getMap().moveCamera(CameraUpdateFactory.newLatLng(latLng));
