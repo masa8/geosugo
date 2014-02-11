@@ -146,7 +146,10 @@ class ModelProvider {
 		}else if ( 	info.getStatus() == ZoneInfo.Status.PLAY ){
 			
 			if ( getZoneIndex(newPositionKey).intValue() == 
-					getZoneKeySet().size() - 1 ){
+					getZoneKeySet().size() - 1 && 
+					getZoneKeySet().size() - 1 == 
+					info.getActivityZoneIndex()
+					){
 				
 						info.setCurrentZoneIndex(getZoneIndex(newPositionKey));
 						return;

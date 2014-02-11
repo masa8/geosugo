@@ -14,7 +14,7 @@
     <string name="status">状況</string>
     <string name="visited_label">行きました！</string>
     
-    
+    <string name="license_menu">License</string>
     <string name="e_message_googleplay">[GooglePlayError]利用できません。</string>
   
 </resources>

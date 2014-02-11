@@ -4,9 +4,10 @@ package tokaido.sugoroku;
 
 import java.util.UUID;
 
+import com.actionbarsherlock.app.SherlockFragment;
+
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
-public class DescriptionFragment extends Fragment {
+public class DescriptionFragment extends SherlockFragment {
 	public static final String ID = "ID";
 	
 	private Data data;

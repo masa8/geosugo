@@ -14,10 +14,9 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
-public class MapFragment extends SupportMapFragment implements  android.location.LocationListener {
+public class MapFragment extends SherlockMapFragment implements  android.location.LocationListener {
 	
 	SugorokuMaster sm;
 	private LocationManager mLocationManager;
