@@ -7,7 +7,6 @@ LICENSE
 =
  geohex
  -------
- Creative Commons License
  GeoHex by sa2da is licensed under a Creative Commons 表示-継承 2.1 日本 License. 
 
  geohex4j
@@ -19,4 +18,5 @@ LICENSE
  
  GeoSugo
  -------
- CC-BY-SA
+ <img src="http://i.creativecommons.org/l/by-sa/2.1/jp/88x31.png"> 
+ All content in is licensed under Creative Commons 表示-継承 2.1 日本 License. (CC-BY-SA 2.1)
