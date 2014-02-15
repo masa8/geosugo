@@ -18,5 +18,6 @@ LICENSE
  geohex4j is followed original JavaScript code license (CC-BY-SA) developed by @sa2da.
  
  GeoSugo
+ -------
  <img src="http://i.creativecommons.org/l/by-sa/2.1/jp/88x31.png"> <br>
  All content in is licensed under Creative Commons 表示-継承 2.1 日本 License. (CC-BY-SA 2.1)
