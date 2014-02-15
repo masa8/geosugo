@@ -5,6 +5,11 @@ geosugo
 
 LICENSE
 =
+ geohex
+ -------
+ Creative Commons License
+ GeoHex by sa2da is licensed under a Creative Commons 表示-継承 2.1 日本 License. 
+
  geohex4j
  --------
  GeoSugo uses geohex4j whose license is:
