@@ -24,7 +24,7 @@ LICENSE
 
  Contents
  --------
- 本アプリケーションのコンテンツとして下記著作物を改変し利用しています。
+ 本アプリケーションのコンテンツとして下記著作物を改変し利用しています。<br>
  <img src="http://i.creativecommons.org/l/by/2.1/jp/88x31.png"> <br>
  横浜市 図書館アーカイブ Creative Commons 表示 2.1 License. (CC-BY 2.1)
  
