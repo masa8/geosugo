@@ -1131,14 +1131,14 @@ containing a value of this type.
         public static final int goal_sugoroku_description=0x7f040037;
         public static final int homeAsUp=0x7f040006;
         public static final int hybrid=0x7f040013;
-        public static final int info=0x7f04003b;
-        public static final int license_dialog_view=0x7f04003d;
+        public static final int info=0x7f04003a;
+        public static final int license_dialog_view=0x7f04003c;
         public static final int listMode=0x7f040002;
-        public static final int map=0x7f040039;
+        public static final int map=0x7f04003d;
         public static final int menu_item_geosugo=0x7f040040;
         public static final int none=0x7f040010;
         public static final int normal=0x7f040001;
-        public static final int photo=0x7f04003a;
+        public static final int photo=0x7f040039;
         public static final int play_sugoroku_button=0x7f04003f;
         public static final int play_sugoroku_description=0x7f04003e;
         public static final int satellite=0x7f040011;
@@ -1148,7 +1148,7 @@ containing a value of this type.
         public static final int tabMode=0x7f040003;
         public static final int terrain=0x7f040012;
         public static final int useLogo=0x7f040004;
-        public static final int visited=0x7f04003c;
+        public static final int visited=0x7f04003b;
         public static final int wrap_content=0x7f040000;
     }
     public static final class integer {
@@ -1178,13 +1178,12 @@ containing a value of this type.
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_main=0x7f030015;
         public static final int goal_sugoroku=0x7f030016;
-        public static final int include_map_fragment=0x7f030017;
-        public static final int infowindow=0x7f030018;
-        public static final int license_dialog=0x7f030019;
-        public static final int map_fragment=0x7f03001a;
-        public static final int play_sugoroku=0x7f03001b;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001c;
-        public static final int sherlock_spinner_item=0x7f03001d;
+        public static final int infowindow=0x7f030017;
+        public static final int license_dialog=0x7f030018;
+        public static final int map_fragment=0x7f030019;
+        public static final int play_sugoroku=0x7f03001a;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001b;
+        public static final int sherlock_spinner_item=0x7f03001c;
     }
     public static final class menu {
         public static final int geosugo_menu=0x7f0b0000;
