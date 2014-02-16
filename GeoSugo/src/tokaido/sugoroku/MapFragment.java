@@ -6,11 +6,15 @@ import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -34,6 +38,7 @@ public class MapFragment extends SherlockMapFragment implements  android.locatio
 	public View onCreateView(LayoutInflater inflater, 
 			ViewGroup container,
 			Bundle savedInstanceState) {
+		setHasOptionsMenu(true);
 		
 		View view =  super.onCreateView(inflater, 
 					container ,
@@ -85,6 +90,33 @@ public class MapFragment extends SherlockMapFragment implements  android.locatio
 		super.onPause();
 	}
 
+
+	@Override
+	public void onCreateOptionsMenu(
+			com.actionbarsherlock.view.Menu menu, 
+			com.actionbarsherlock.view.MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+		inflater.inflate(R.menu.geosugo_menu, menu);
+		
+		
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch ( item.getItemId() ){
+		case R.id.menu_item_geosugo:
+			FragmentManager fm = getActivity().getSupportFragmentManager();
+	        LicenseDialog license = new LicenseDialog();
+	        license.setTargetFragment(this,0);
+	        license.show(fm, "lisence_dialog");
+			return true;
+			default:
+				return super.onOptionsItemSelected(item);
+				
+		}
+		
+		
+	}
 
 	@Override
 	public void onLocationChanged(Location location) {
