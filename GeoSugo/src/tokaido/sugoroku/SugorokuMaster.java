@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import tokaido.sugoroku.GeoHex.Zone;
 import android.content.Intent;
-import android.support.v4.app.Fragment;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 
@@ -31,27 +31,36 @@ class SugorokuMaster implements OnMapClickListener{
 		
 		
 		public SugorokuMaster(MapFragment mapFragment, 
-							Fragment fragment,
+							Bundle savedInstanceState,
 							ModelProvider mp,
 							ViewProvider vp){
 	        
 			mMapFragment = mapFragment;
-			mActivity = fragment.getActivity();
+			mActivity = mapFragment.getActivity();
+			mMap = mapFragment.getMap();
 			
-			initializeMap();
+			if( savedInstanceState != null )
+			{
+				float zoomLevel = savedInstanceState.getFloat("ZOOMLEVEL");
+				double lat = savedInstanceState.getDouble("LAT");
+				double lng = savedInstanceState.getDouble("LNG");
+				mMap.setMyLocationEnabled(true);
+		    	mMap.moveCamera( 
+						CameraUpdateFactory.newLatLngZoom(
+							new LatLng(lat, lng),  zoomLevel ));	
+				
+				
+			}else{
+				mMap.setMyLocationEnabled(true);
+		    	mMap.moveCamera( 
+						CameraUpdateFactory.newLatLngZoom(
+								new LatLng(35.46311677452055, 139.60979461669922),  13.0f ));	
+			}
+
+			
 			setModelProvider(mp);
 			setViewProvider(vp);
 			
-			
-		}
-
-		private void initializeMap() {
-			
-			mMap = mMapFragment.getMap();
-			mMap.setMyLocationEnabled(true);
-	    	mMap.moveCamera( 
-					CameraUpdateFactory.newLatLngZoom(
-							new LatLng(35.46311677452055, 139.60979461669922),  13.0f ));
 			
 		}
 		

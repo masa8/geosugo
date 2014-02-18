@@ -12,8 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -32,24 +30,40 @@ public class MapFragment extends SherlockMapFragment implements  android.locatio
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		
 	}
 	
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		outState.putFloat("ZOOMLEVEL", getMap().getCameraPosition().zoom);
+		outState.putDouble("LAT", getMap().getCameraPosition().target.latitude);
+		outState.putDouble("LNG", getMap().getCameraPosition().target.longitude);
+		
+	}
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, 
 			ViewGroup container,
 			Bundle savedInstanceState) {
+		
+		
 		setHasOptionsMenu(true);
 		
 		View view =  super.onCreateView(inflater, 
 					container ,
 					savedInstanceState);
 		
+
+
 		sm = new SugorokuMaster(this, 
-				this,
+				savedInstanceState,
 				new ModelProvider(this),
 				new ViewProvider());
 		sm.setListener();
-
+		
+		
 		
 		
 		return view;
